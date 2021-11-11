@@ -4,6 +4,7 @@
     padding: 6px 8px 6px 8px;
     background-color: #78bae4;
     position: fixed;
+    top: 0;
 }
 
 #sidewrapper a{
@@ -15,11 +16,15 @@
     padding-left: 10px;
     font-size: 14px;
 }
+#sidewrapper a:hover{
+    text-decoration: underline;
+}
 
 #sidewrapper p{
     margin-bottom: 4px;
     margin:5px 0px 5px 0px;
 }
+
 
 #sidewrapper hr{
     border-color: #77c3f3;

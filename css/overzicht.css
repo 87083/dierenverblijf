@@ -1,0 +1,60 @@
+#klantlijst{
+    width: 75%;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.kopjes{
+    padding-top: 5px;
+    padding: 0 3px 0 3px ;
+}
+.kopjes p{
+    display: inline-block;
+    min-width: 10px;
+    font-weight: bold ;
+}
+.kopjes hr{
+    display: block;
+    width: 100%;
+    margin-top: 5px;
+}
+.klantdata{
+    border: 1px solid black;
+    border-top: none;
+    padding: 0 3px 0 3px ;
+}
+.klantdata:nth-child(odd){
+    background-color: #78bbe43d;
+}
+.klantdata p{
+    display: inline-block;
+}
+
+.k-id, .id{
+    width: 2%;
+    max-width: 2%;
+}
+.k-vnaam, .vnaam{
+    width: 20%;
+    max-width: 20%;
+}
+.k-tussenv, .tussenv{
+    width: 15%;
+    max-width: 15%;
+}
+.k-anaam, .anaam{
+    width: 25%;
+    max-width: 25%;
+}
+.k-email, .email{
+    width: 25%;
+    max-width: 25%;
+}
+.detail a{
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+.detail a:hover{
+    text-decoration: underline;
+}

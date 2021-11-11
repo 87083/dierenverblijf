@@ -4,8 +4,8 @@
     <hr>
     <p>Pagina's</p>
     <a href="overzicht.php">Overzicht</a>
-    <p>toevoegen</p>
-    <a href="">toevoegen</a>
+    <p>Acties</p>
+    <a href="">Toevoegen</a>
     <p>Account</p>
     <a href="">Uitloggen</a>
 </div>

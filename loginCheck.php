@@ -25,7 +25,6 @@
   {
     session_start();
     $_SESSION["username"] = $_POST['username'];
-    echo "<h1><center> Login successful </center></h1>";  
     header("location:overzicht.php");
 
   } else {
