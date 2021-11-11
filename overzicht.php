@@ -48,8 +48,6 @@
                     <?php
                     do{
                         ?>
-                        
-
                             <div class="klantdata">
                                 <p class="id"> <?php echo $row['klantid'];?></p>
                                 <p class="vnaam"><?php echo $row['voornaam'];?></p>

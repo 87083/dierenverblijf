@@ -1,5 +1,6 @@
 #klantlijst{
-    width: 75%;
+    max-width: 75%;
+    width: 70vw;
     margin: auto;
     margin-top: 20px;
 }
@@ -32,22 +33,27 @@
 
 .k-id, .id{
     width: 2%;
+    min-width: 25px;
     max-width: 2%;
 }
 .k-vnaam, .vnaam{
     width: 20%;
+    min-width: 250px;
     max-width: 20%;
 }
 .k-tussenv, .tussenv{
     width: 15%;
+    min-width: 15%;
     max-width: 15%;
 }
 .k-anaam, .anaam{
     width: 25%;
+    min-width: 25%;
     max-width: 25%;
 }
 .k-email, .email{
     width: 25%;
+    min-width: 25%;
     max-width: 25%;
 }
 .detail a{
