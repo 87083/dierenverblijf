@@ -45,7 +45,7 @@ input{
 input[type=password]{
     margin-top: 8px;
     font: small-caption;
-    font-size: 50px;
+    font-size:  16px;
 }
 
 input[type=text], input[type=password]{
