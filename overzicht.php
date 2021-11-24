@@ -24,9 +24,8 @@
   
 </head>
 <body>
-    <header></header>
-    <div id="container">
 
+    <div id="container">
         <?php 
             require "sidebar.php"; 
             $row = $result->fetch();
@@ -36,25 +35,35 @@
             else{
                 ?>
                 <div id="klantlijst">
-                    <div class="kopjes">
-                        <p class="k-id">ID</p>
-                        <p class="k-vnaam">Voornaam</p>
-                        <p class="k-tussenv">Tussenvoegsel</p>
-                        <p class="k-anaam">Achternaam</p>
-                        <p class="k-email">Email</p>
-                        <p class="k-detail">Details</p>
-                        <hr>
-                    </div>
                     <?php
                     do{
                         ?>
-                            <div class="klantdata">
-                                <p class="id"> <?php echo $row['klantid'];?></p>
-                                <p class="vnaam"><?php echo $row['voornaam'];?></p>
-                                <p class="tussenv"><?php echo $row['tussenvoegsel'];?></p>
-                                <p class="anaam"><?php echo $row['achternaam'];?></p>
-                                <p class="email"><?php echo $row['email'];?></p>
-                                <p class="detail"><?php echo "<a href='detail.php?id=" . $row['klantid']. "'>Details</a>"?></p>
+                            <div class="card">
+                                <div class='cardwrapper'>
+                                    <div class='naam'>
+                                        <p class="vnaam"><?php echo $row['voornaam'];?></p>
+                                        <div class='achternaam'>
+                                            <p class="tussenv"><?php echo $row['tussenvoegsel'];?></p>
+                                            <p class="anaam"><?php echo $row['achternaam'];?></p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="blue">
+                                    <div class='extra'>
+                                        <p class="id"> Klant nummer: <?php echo $row['klantid'];?></p>
+                                        <p class="email"><?php echo $row['email'];?></p>
+                                    </div>
+
+
+                                    <hr class='cardhr'>
+                                    <div class="buttons">
+                                        <p class="detail"><?php echo "<a href='details.php?id=" . $row['klantid']. "'>Details</a>"?></p>
+                                        <p class="detail"><?php echo "<a href='bewerkklant.php?id=" . $row['klantid']. "'>Bewerken</a>"?></p>
+                                        <p class="detail"><?php echo "<a href='verwijderklant.php?id=" . $row['klantid']. "'>Verwijderen</a>"?></p>
+                                    </div>
+                                </div>
+                                     
                             </div>
                         
                         <?php 
